@@ -1,0 +1,168 @@
+
+.icons{
+    display: grid;
+    grid-template-columns: repeat(3,2em);
+    margin-top: 0.5em;
+}
+
+.anchorLinks{
+    text-decoration: none;
+}
+
+.gitHubLink{
+    color:#171515
+}
+
+.linkedInLink{
+    color: #0A66C2;
+}
+
+.gmailLink{
+    color: #DB4437;
+}
+
+.gitHubLink:hover{
+    cursor: pointer;
+}
+
+.linkedInLink:hover{
+    cursor: pointer;
+}
+
+.gmailLink:hover{
+    cursor: pointer;
+}
+
+@media(min-width: 601px ) and (max-width:830px){
+    
+    .aboutMeContainer{
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .mainTitle{
+        display: flex; 
+        justify-content: center;
+    }
+ 
+    .pic__info__grid{
+        display: flex;
+        flex-direction: column;
+     }
+ 
+    .aboutme__pic{
+        width: 30em;
+        border-radius: 10px;
+    }
+ 
+    .pic__info_flow{
+        display: flex;
+        justify-content: center;
+    }
+ 
+    .image__container{
+       margin: 3em 0em;
+       object-fit: contain;
+    }
+
+    .info__container{
+        color: white;
+        padding: 0em 2em;
+        font-size: 1.5rem;
+    }
+
+    .sub__title{
+        margin-bottom: .5em;
+    }
+}
+
+@media(max-width:600px){
+
+    .aboutMeContainer{
+       display: flex;
+       flex-direction: column;
+    }
+
+    .mainTitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic__info__grid{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .aboutme__pic{
+        width: 20em;
+        border-radius: 10px;
+    }
+
+    .image__container{
+        margin: 3em 0em;
+        object-fit: contain;
+    }
+
+    .info__container{
+        color: white;
+        font-size: 1rem;
+    }
+
+    .pic__info_flow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info__container{
+        justify-content: center;
+        color: white;
+        padding: 0em 2em;
+        margin-bottom: 2em;
+        font-size: 1rem;
+    }
+}
+
+@media(min-width:831px){
+
+    .mainTitle{
+        margin-top:5em;
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }    
+
+    .pic__info__grid{
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        gap: 2em;
+    }
+    
+    .image__container{
+        display: flex;
+        text-align: center;
+        object-fit: contain;
+        padding: 3em;
+    }
+    
+    .aboutme__pic{
+       width: 30em;
+       border-radius: 10px;
+    }
+
+    .pic__info_flow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info__container{
+        justify-content: center;
+        color: white;
+        padding: 3em;
+        font-size: 1.25rem;
+    }
+}
